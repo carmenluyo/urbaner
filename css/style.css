@@ -76,3 +76,12 @@ button,
   color: #606060;
   font-size: 45px;
   font-family: 'ProximaNova'; }
+
+.green {
+  color: #40df6d; }
+
+.blue {
+  color: #6caddf; }
+
+footer {
+  background: #262f36; }
