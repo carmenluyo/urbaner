@@ -1,0 +1,44 @@
+/***************************************************
+AUTOR: carmen Luyo
+PROYECTO: urbaner
+DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
+****************************************************/
+@import 'normalize.css';
+@import 'style.scss';
+
+.banner {
+	background-image: url(../assets/backgroundHomeD.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    .ctn-banner {
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: #fff;
+		font-family: 'ProximaNova';
+		h2 {
+			text-transform: uppercase;
+			text-shadow: 3px 0px 5px #585858;
+			font-size: 2.96em;
+		}
+		p {
+			font-size: 1.6em;
+		}
+		.btn-green {
+			text-transform: uppercase;
+			font-size: 16px;
+			margin: 0 20px;
+		}
+		.btn-envios {
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+		}
+    }
+}

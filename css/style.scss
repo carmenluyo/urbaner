@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/* Fonts */
+
+/* Regular */
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url('../assets/fonts/ProximaNova.eot');
+  src: url('../assets/fonts/ProximaNova.otf');
+  src: url('../assets/fonts/ProximaNova.svg');
+  src: url('../assets/fonts/ProximaNova.ttf');
+  src: url('../assets/fonts/ProximaNova.woff');
+
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// colores de la website
+
+$colorWeb: #40df6d; // green urbaner
+$colorgray:#b6b4ae; // gray
+
+
+/** texto centrado verticalmente - necesita un etiqueta padre con alto**/
+
+@mixin table($h: 100%) {
+  & {
+    display: table;
+    width: 100%;
+    height: $h;
+
+    .tr {
+      display: table-row;
+      width: 100%;
+      height: $h;
+      vertical-align: middle;
+
+      .td {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.centerinfovert {
+  @include table;
+}
+
+
+
+/** flex **/
+
+
+@mixin mflex-center {
+  display: flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+.flex-center {
+  
+  flex-direction: column;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  @include mflex-center;
+}
+
+a,
+input[type=submit],
+button,
+.transit {
+    transition: all 0.5s ease-out;
+}
+
+
+
+@media only screen and (min-width:768px){
+
+}
+
+
+@media only screen and (min-width: 320px) {
+
+}
+
+
+
+@media only screen and (min-width: 1366px) {
+
+}
+
+.btn-green {
+  background: $colorWeb;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+}

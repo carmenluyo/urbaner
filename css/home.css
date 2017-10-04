@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/***************************************************
+AUTOR: carmen Luyo
+PROYECTO: urbaner
+DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
+****************************************************/
+@import url(normalize.css);
+/* Fonts */
+/* Regular */
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../assets/fonts/ProximaNova.eot");
+  src: url("../assets/fonts/ProximaNova.otf");
+  src: url("../assets/fonts/ProximaNova.svg");
+  src: url("../assets/fonts/ProximaNova.ttf");
+  src: url("../assets/fonts/ProximaNova.woff"); }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/** texto centrado verticalmente - necesita un etiqueta padre con alto**/
+.centerinfovert {
+  display: table;
+  width: 100%;
+  height: 100%; }
+  .centerinfovert .tr {
+    display: table-row;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+    .centerinfovert .tr .td {
+      display: table-cell;
+      vertical-align: middle; }
+
+/** flex **/
+.flex-center {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center; }
+
+a,
+input[type=submit],
+button,
+.transit {
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.btn-green {
+  background: #40df6d;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  padding: 10px 25px; }
+
+.banner {
+  background-image: url(../assets/backgroundHomeD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
+  width: 100%; }
+  .banner .ctn-banner {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'ProximaNova'; }
+    .banner .ctn-banner h2 {
+      text-transform: uppercase;
+      text-shadow: 3px 0px 5px #585858;
+      font-size: 2.96em; }
+    .banner .ctn-banner p {
+      font-size: 1.6em; }
+    .banner .ctn-banner .btn-green {
+      text-transform: uppercase;
+      font-size: 16px;
+      margin: 0 20px; }
+    .banner .ctn-banner .btn-envios {
+      margin-top: 20px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
