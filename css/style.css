@@ -224,8 +224,8 @@ header {
   text-align: center;
   margin: 0 auto;
   display: block;
-  position: absolute;
-  top: 55%;
+  position: relative;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
