@@ -279,6 +279,23 @@ header {
     .activo .ctn-activo button a {
       color: #fff; }
 
+@media only screen and (max-width: 1024px) {
+  .black {
+    height: 100px;
+    line-height: 100px; } }
+
+.black .right ul li:last-child a {
+  border: none;
+  border-radius: 0px; }
+
+.black .right ul .perfil img {
+  border-radius: 50%;
+  height: 48px;
+  width: 50px; }
+
+.black .left ul li {
+  margin: 0 23px; }
+
 .banner {
   background-image: url(../assets/img/backgroundHomeD.jpg);
   background-repeat: no-repeat;

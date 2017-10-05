@@ -335,3 +335,35 @@ header {
     }
   }
 }
+.black {
+  @media only screen and (max-width: 1024px) {
+    height:100px;
+    line-height: 100px;
+  }
+  .right {
+    ul {
+      li {
+        &:last-child {
+          a {
+          border: none;
+          border-radius: 0px;
+          }
+        }
+      }
+      .perfil {
+        img {
+          border-radius: 50%;
+          height: 48px;
+          width: 50px;
+        }
+      }
+    }
+  }
+  .left {
+    ul {
+      li {
+        margin: 0 23px;
+      }
+    }
+  }
+}
