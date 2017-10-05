@@ -282,10 +282,43 @@ header {
       color: #fff; }
 
 .select-nav {
-  display: none; }
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 1px 2px 3px #ccc;
+  box-shadow: 1px 2px 3px #ccc;
+  padding: 20px 25px;
+  width: 170px;
+  z-index: 100; }
+  .select-nav:before {
+    border-bottom: 15px solid #fff;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    height: 0;
+    position: absolute;
+    content: ' ';
+    left: 42%;
+    top: -15px;
+    width: 0; }
+  .select-nav nav a {
+    display: block;
+    color: #303e47;
+    font-size: 0.96em;
+    padding: 3px 0; }
 
-.select-nav.on {
-  display: block; }
+.my-account {
+  cursor: pointer; }
+  .my-account span {
+    color: #fff;
+    margin-right: 5px; }
+
+.active {
+  display: block;
+  position: absolute;
+  right: 148px;
+  top: 88px; }
 
 .black .right ul li:last-child a {
   border: none;

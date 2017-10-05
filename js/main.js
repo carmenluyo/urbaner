@@ -9,8 +9,8 @@ $(".switch").click(function() {
 
 /*perfil select */
 
-$(".show").click(function() {
-  $(".select-nav").addClass("on");
+$("#my-account").click(function() {
+  $(".select-nav").toggleClass("active");
 });
 
 

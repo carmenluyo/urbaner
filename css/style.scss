@@ -352,9 +352,49 @@ header {
 }
 .select-nav {
   display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-box-shadow: 1px 2px 3px #ccc;
+  box-shadow: 1px 2px 3px #ccc;
+  padding: 20px 25px;
+  width: 170px;
+  z-index: 100;
+
+  &:before {
+    border-bottom: 15px solid #fff;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    height: 0;
+    position: absolute;
+    content: ' ';
+    left: 42%;
+    top: -15px;
+    width: 0;
+  }
+  nav {
+    a {
+      display: block;
+      color: #303e47;
+      font-size: 0.96em;
+      padding: 3px 0;
+    }
+  }
 }
-.select-nav.on {
+
+.my-account{
+  cursor: pointer;
+  span {
+    color: #fff;
+    margin-right: 5px;
+  }
+}
+.active {
   display: block;
+  position: absolute;
+  right: 148px;
+  top: 88px;
 }
 
 .black {
