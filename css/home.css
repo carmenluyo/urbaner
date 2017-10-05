@@ -79,53 +79,9 @@ footer {
   padding: 0 14px;
   float: left; }
 
-.col-1 {
-  /* (1 / 12) x 100 */
-  width: 8.333333%; }
-
-.col-2 {
-  /* (2 / 12) x 100 */
-  width: 16.666667%; }
-
-.col-3 {
-  /* (3 / 12) x 100 */
-  width: 25%; }
-
 .col-4 {
   /* (4 / 12) x 100 */
   width: 33.33%; }
-
-.col-5 {
-  /* (5 / 12) x 100 */
-  width: 41.666667%; }
-
-.col-6 {
-  /* (6 / 12) x 100 */
-  width: 50%; }
-
-.col-7 {
-  /* (7 / 12) x 100 */
-  width: 58.333333%; }
-
-.col-8 {
-  /* (8 / 12) x 100 */
-  width: 66.666667%; }
-
-.col-9 {
-  /* (9 / 12) x 100 */
-  width: 75%; }
-
-.col-10 {
-  /* (10 / 12) x 100 */
-  width: 83.333333%; }
-
-.col-11 {
-  /* (11 / 12) x 100 */
-  width: 91.666667%; }
-
-.col-12 {
-  /* (12 / 12) x 100 */
-  width: 100%; }
 
 .black {
   background: #303e47; }
@@ -221,6 +177,58 @@ header {
           color: #fff;
           padding: 10px 35px; }
 
+.switch {
+  width: 30px;
+  height: 23px;
+  position: absolute;
+  left: 10%;
+  top: 9%;
+  margin: -15px 0px 0px -15px;
+  cursor: pointer;
+  z-index: 10; }
+  .switch.on:after {
+    -webkit-transform: rotate(-45deg) translate(7px, -8px);
+    -ms-transform: rotate(-45deg) translate(7px, -8px);
+    transform: rotate(-45deg) translate(7px, -8px); }
+  .switch.on:before {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+    -ms-transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(5px, 5px); }
+  @media only screen and (min-width: 1024px) {
+    .switch {
+      display: none; } }
+  .switch .on {
+    display: block; }
+
+.switch .menu-toggle {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.switch.on .menu-toggle {
+  opacity: 0; }
+
+.switch:before, .switch:after {
+  content: "";
+  display: block;
+  height: 5px;
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
 .banner {
   background-image: url(../assets/img/backgroundHomeD.jpg);
   background-repeat: no-repeat;
@@ -258,12 +266,13 @@ header {
       .banner .ctn-banner .btn-envios a:first-child {
         margin-bottom: 25px;
         display: block; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .banner {
       height: 550px; }
       .banner .ctn-banner {
         width: 100%;
-        margin: 0px; }
+        margin: 0px;
+        top: 30%; }
         .banner .ctn-banner h2 {
           font-size: 2.96em; }
         .banner .ctn-banner p {
@@ -283,6 +292,9 @@ header {
             display: -ms-flexbox;
             display: flex;
             margin-bottom: 0px; } }
+  @media only screen and (min-width: 1024px) {
+    .banner .ctn-banner {
+      top: 20%; } }
 
 .beneficios .subtitle {
   text-align: center;
@@ -415,7 +427,7 @@ header {
   .patrocinadores .grid-patocinadores {
     display: block;
     text-align: center; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .patrocinadores .grid-patocinadores {
       -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -512,6 +524,8 @@ footer {
   color: #fff;
   padding: 50px 0 10px; }
   @media only screen and (max-width: 768px) {
+    footer .row {
+      margin: 0px; }
     footer .col-4 {
       width: 94%;
       margin: 0 auto;
@@ -571,6 +585,8 @@ footer {
           margin: 0 auto; }
           footer .social-footer nav ul li a img {
             height: 25px; }
+  footer .copy .imgResponsive {
+    width: 100%; }
   footer p {
     font-size: 13px;
     margin: 25px 0 0;

@@ -1,3 +1,16 @@
+//header responsive 
+
+/*Menú Toggle and hidden*/
+$(".switch").click(function() {
+  $(".switch").toggleClass("on");
+  $(".menu").toggleClass("opacity");
+  $("#menu-movil").toggleClass("active");
+});
+
+
+
+//tabs de envios
+
 $(".tabs-envios a ").on("click",function(e){
     e.preventDefault();
     $(".tabs-envios a ").removeClass("activeImg");
@@ -7,8 +20,9 @@ $(".tabs-envios a ").on("click",function(e){
     $("."+b).toggle();
 })
 
+//login
+
 $(document).ready(function () {
-      //alert('efef');
         //event handler for submit button
         $("#myform").submit(function (e) {
             e.preventDefault();
@@ -23,7 +37,6 @@ $(document).ready(function () {
 
     //authenticate function to make ajax call
     function authenticate(userName, password) {
-        //alert('efeime');
         $.ajax
         ({
             type: "POST",
