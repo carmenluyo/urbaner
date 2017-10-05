@@ -238,7 +238,7 @@ header {
   .banner .ctn-banner {
     display: block;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -271,8 +271,7 @@ header {
       height: 550px; }
       .banner .ctn-banner {
         width: 100%;
-        margin: 0px;
-        top: 30%; }
+        margin: 0px; }
         .banner .ctn-banner h2 {
           font-size: 2.96em; }
         .banner .ctn-banner p {
@@ -292,9 +291,12 @@ header {
             display: -ms-flexbox;
             display: flex;
             margin-bottom: 0px; } }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) and (max-width: 767) {
     .banner .ctn-banner {
       top: 20%; } }
+  @media only screen and (min-width: 1025px) {
+    .banner .ctn-banner {
+      top: 40%; } }
 
 .beneficios .subtitle {
   text-align: center;

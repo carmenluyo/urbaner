@@ -109,7 +109,7 @@ header {
     .ctn-banner {
 		display: block;
 		position: absolute;
-		top: 40%;
+		top: 30%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
@@ -148,7 +148,6 @@ header {
 		.ctn-banner {
 			width: 100%;
 			margin: 0px;
-			top: 30%;
 			h2 {
 				font-size: 2.96em;
 			}
@@ -165,10 +164,15 @@ header {
 			}
 		}
     }
-    @media only screen and (min-width: 1024px){
+    @media only screen and (min-width: 1024px) and (max-width:767){
     	.ctn-banner {
-    		    top: 20%;
+    		top: 20%;
     	}
+    }
+    @media only screen and (min-width:1025px) {
+		.ctn-banner {
+			top: 40%;
+		}
     }
 }
 
