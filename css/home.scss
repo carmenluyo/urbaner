@@ -6,10 +6,21 @@ DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
 @import 'normalize.css';
 @import 'style.scss';
 
-//header
-
 header {
 	padding: 20px 0;
+	.logo {
+		justify-content: flex-start;
+		margin: 0px;
+		position: absolute;
+		.logo-i {
+			img {
+				height: 50px;
+			}
+			h1 {
+				display: none;
+			}
+		}
+	}
 	nav {
 		
 		ul {
@@ -23,18 +34,7 @@ header {
 					font-size: 16px;
 				}
 			}
-			.left {
-			   	justify-content: flex-start;
-			    margin: 0px;
-			   .logo {
-			   		img {
-			   			height: 50px;
-			   		}
-			   		h1 {
-			   			display: none;
-			   		}
-			   }
-			}
+
 			.right {
 			   	justify-content: flex-end;
 			   	margin-right: 0px;
@@ -52,6 +52,52 @@ header {
 
 			   		}
 			   	}
+			}
+		}
+	}
+	@media only screen and (max-width: 768px){
+		.logo{
+			max-width: 174px;
+			display: block;
+			position: relative;
+			margin: 0 auto;
+		}
+		nav{
+			-webkit-transition: all 0.5s ease-out;
+			-o-transition: all 0.5s ease-out;
+			transition: all 0.5s ease-out;
+			ul{
+				display: block!important;
+				li{
+					width: 100%;
+					text-align: center;
+					margin-left: 0!important;
+					a{
+						color: #fff;
+						display: block;
+						font-size: 22px;
+						margin: 15px 0;
+						width: 100%;
+					}
+				}
+			}
+			&.menu.opacity{
+				display: none;
+
+			}
+		}
+		#header-content{
+			-webkit-transition: all 0.5s ease-out;
+			-o-transition: all 0.5s ease-out;
+			transition: all 0.5s ease-out;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			padding-top: 20px;
+			&.active{
+				background-color: rgba(0, 0, 0, 0.85);
+				z-index: 1;
 			}
 		}
 	}
@@ -221,6 +267,7 @@ header {
 	}
 }
 
+
 //section envios
 
 .envios {
@@ -303,6 +350,7 @@ header {
 			.center-text {
 				article {
 					width: 67%;
+					max-width: 545px;
 				}
 			}
 			.tabs-envios {
@@ -324,6 +372,7 @@ header {
 		}
 	}
 }
+
 
 // patrocinadores
 

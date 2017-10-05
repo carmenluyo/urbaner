@@ -107,7 +107,9 @@ footer {
       color: #000;
       font-size: 16px;
       outline: none;
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 15px;
+      margin-top: 5px; }
     .login form input#loginEmail {
       margin-bottom: 20px; }
     .login form .btnLogin {
@@ -120,3 +122,17 @@ footer {
       margin-top: 20px; }
     .login form .registroCliente {
       color: #666; }
+
+.activo {
+  background-color: #f3f3f3;
+  height: calc(100% - 90px);
+  padding-top: 5%; }
+  .activo .ctn-activo {
+    text-align: center; }
+    .activo .ctn-activo h4 {
+      margin-top: 27px; }
+    .activo .ctn-activo p {
+      margin-top: 22px;
+      color: #666; }
+    .activo .ctn-activo button a {
+      color: #fff; }

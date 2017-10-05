@@ -42,12 +42,13 @@ $(document).ready(function () {
             type: "POST",
             url: "https://api.sandbox.urbaner.com/api/client/authenticate/jwt/",
             dataType: 'json',
-            async: false,
+
             //json object to sent to the authentication url
             data: {email:  userName , password :password},
 
             success: function (rs) {
-
+            	console.log(rs);
+            	
                 window.location.replace("activo.html");
             }
         })
