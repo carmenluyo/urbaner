@@ -122,8 +122,6 @@ footer {
 
 .black {
   background: #303e47; }
-  .black .right {
-    display: none; }
 
 .btn-login, .login form .btnLogin, .login form .loginFacebook {
   color: #fff;

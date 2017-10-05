@@ -391,7 +391,91 @@ header {
 }
 
 //
+//
 
 footer {
 	color: #fff;
+	padding: 50px 0 10px;
+	@media only screen and (max-width: 768px){
+		.col-4{
+			width: 94%;
+			margin: 0 auto;
+			float: none;
+			text-align: center;
+			&:after{
+				display: block;
+				content: " ";
+				clear: both;
+			}
+		}
+	}
+	.menu-footer{
+		width: 66.66666667%;
+		float: left;
+		@media only screen and (max-width: 768px){
+			width: 94%;
+			margin: 0 auto;
+			float: none;
+			&:after{
+				display: block;
+				content: " ";
+				clear: both;
+			}
+		}
+		li{
+			width: 33.33%;
+			float: left;
+			@media only screen and (max-width: 450px){
+				width: 100%;
+				a{
+					width: 100%;
+				}
+			}
+			a{
+				color:#fff;
+				padding: 10px 0;
+				display: block;
+				font-size: 16px;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.social-footer{
+		width: 33.33333333%;
+		@media only screen and (max-width: 768px){
+			width: 94%;
+			margin: 20px auto;
+			float: none;
+			&:after{
+				display: block;
+				content: " ";
+				clear: both;
+			}
+		}
+		nav{
+			width: 48%;
+			margin: 20px auto 0;
+			ul{
+				li{
+					display: block;
+					float: left;
+					width: 25%;
+					text-align: center;
+					a{
+						margin: 0 auto;
+						img{
+							height: 25px;
+						}
+					}
+				}
+			}
+		}
+	}
+	p{
+		font-size: 13px;
+		margin: 25px 0 0;
+		text-align: center;
+	}
 }
