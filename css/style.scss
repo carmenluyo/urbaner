@@ -1,8 +1,20 @@
 @charset "utf-8";
 
-/* Fonts */
+// colores de la website
 
-/* Regular */
+$colorWeb: #40df6d; // green urbaner
+$colorgray:#b6b4ae; // gray
+
+body {
+  font-family: 'ProximaNova';
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Fonts */
 
 @font-face {
   font-family: 'ProximaNova';
@@ -14,60 +26,6 @@
 
 }
 
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-// colores de la website
-
-$colorWeb: #40df6d; // green urbaner
-$colorgray:#b6b4ae; // gray
-
-
-/** texto centrado verticalmente - necesita un etiqueta padre con alto**/
-
-@mixin table($h: 100%) {
-  & {
-    display: table;
-    width: 100%;
-    height: $h;
-
-    .tr {
-      display: table-row;
-      width: 100%;
-      height: $h;
-      vertical-align: middle;
-
-      .td {
-        display: table-cell;
-        vertical-align: middle;
-      }
-    }
-  }
-}
-
-.centerinfovert {
-  @include table;
-}
-
-
-
-/** flex **/
-
-
-@mixin mflex-center {
-  display: flex;
-  display: -moz-flex;
-  display: -webkit-flex;
-  justify-content: center;
-  -moz-justify-content: center;
-  -webkit-justify-content: center;
-  align-items: center;
-  -moz-align-items: center;
-  -webkit-align-items: center;
-}
 
 @mixin transition($args...) {
   -webkit-transition: $args;
@@ -83,36 +41,11 @@ $colorgray:#b6b4ae; // gray
   filter: alpha(opacity=$opacity-ie); //IE8
 }
 
-.flex-center {
-  
-  flex-direction: column;
-  -moz-flex-direction: column;
-  -webkit-flex-direction: column;
-  @include mflex-center;
-}
-
 a,
 input[type=submit],
 button,
 .transit {
     transition: all 0.5s ease-out;
-}
-
-
-
-@media only screen and (min-width:768px){
-
-}
-
-
-@media only screen and (min-width: 320px) {
-
-}
-
-
-
-@media only screen and (min-width: 1366px) {
-
 }
 
 .btn-green {
@@ -130,8 +63,10 @@ button,
 }
 .subtitle {
   color: #606060;
-  font-size: 45px;
-  font-family: 'ProximaNova';
+  font-size: 30px;
+  @media only screen and (min-width: 1024px) {
+    font-size: 45px;
+  }
 }
 .green {
   color: $colorWeb;
@@ -139,6 +74,107 @@ button,
 .blue {
   color: #6caddf;
 }
+
 footer {
-    background: #262f36;
+  background: #262f36;
+}
+
+// responsive
+
+@media only screen and (min-width:768px){
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1366px) {
+
+}
+
+// grillas
+
+.row:before, .row:after{
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.row {
+  margin-left: -14px;
+  margin-right: -14px;
+  min-height: 21px;
+  margin-bottom: 3px;
+  padding: 3px 0;
+}
+
+[class*="col-"] {
+  min-height: 7px;
+  margin-bottom: 3px;
+  padding: 0 14px;
+  float: left;
+}
+
+.col-1 {
+  /* (1 / 12) x 100 */
+  width: 8.333333%;
+} 
+
+.col-2 {
+  /* (2 / 12) x 100 */
+  width: 16.666667%;
+} 
+
+.col-3 {
+  /* (3 / 12) x 100 */
+  width: 25%;
+} 
+
+.col-4 {
+  /* (4 / 12) x 100 */
+  width: 33.33%;
+}
+
+.col-5 {
+  /* (5 / 12) x 100 */
+  width: 41.666667%;
+}
+
+.col-6 {
+  /* (6 / 12) x 100 */
+  width: 50%;
+} 
+
+.col-7 {
+  /* (7 / 12) x 100 */
+  width: 58.333333%;
+}
+
+.col-8 {
+  /* (8 / 12) x 100 */
+  width: 66.666667%;
+}
+
+.col-9 {
+  /* (9 / 12) x 100 */
+  width: 75%;
+}
+
+.col-10 {
+  /* (10 / 12) x 100 */
+  width: 83.333333%;
+}
+
+.col-11 {
+  /* (11 / 12) x 100 */
+  width: 91.666667%;
+}
+
+.col-12 {
+  /* (12 / 12) x 100 */
+  width: 100%;
 }
