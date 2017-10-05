@@ -318,15 +318,15 @@ header {
         color: #fff !important; }
   .envios .width-50 .listPC {
     position: relative;
-    height: 330px; }
+    height: 180px; }
     .envios .width-50 .listPC figure {
       position: absolute;
       top: 0;
       right: 0; }
       .envios .width-50 .listPC figure img {
-        width: 480px;
         position: relative;
-        margin: 0 auto; }
+        margin: 0 auto;
+        width: 250px; }
   @media only screen and (min-width: 1024px) {
     .envios .ctn-envios {
       display: -webkit-box;
@@ -341,6 +341,10 @@ header {
       justify-content: space-around; }
       .envios .ctn-envios .width-50 {
         width: 50%; }
+        .envios .ctn-envios .width-50 .listPC {
+          height: 330px; }
+          .envios .ctn-envios .width-50 .listPC figure img {
+            width: 480px; }
       .envios .ctn-envios .center-text article {
         width: 67%; }
       .envios .ctn-envios .tabs-envios {
