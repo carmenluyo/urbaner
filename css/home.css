@@ -236,9 +236,11 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  width: 100%; }
   .login form {
-    width: 400px; }
+    width: 100%;
+    padding: 0 20px; }
     .login form h3 {
       font-weight: 500;
       margin-bottom: 20px;
@@ -264,6 +266,9 @@ header {
       margin-top: 20px; }
     .login form .registroCliente {
       color: #666; }
+  @media only screen and (min-width: 768px) {
+    .login form {
+      width: 400px; } }
 
 .activo {
   background-color: #f3f3f3;
@@ -279,22 +284,18 @@ header {
     .activo .ctn-activo button a {
       color: #fff; }
 
-@media only screen and (max-width: 1024px) {
-  .black {
-    height: 100px;
-    line-height: 100px; } }
-
-.black .right ul li:last-child a {
-  border: none;
-  border-radius: 0px; }
-
-.black .right ul .perfil img {
-  border-radius: 50%;
-  height: 48px;
-  width: 50px; }
-
-.black .left ul li {
-  margin: 0 23px; }
+.black {
+  height: 90px;
+  line-height: 90px; }
+  .black .right ul li:last-child a {
+    border: none;
+    border-radius: 0px; }
+  .black .right ul .perfil img {
+    border-radius: 50%;
+    height: 48px;
+    width: 50px; }
+  .black .left ul li {
+    margin: 0 23px; }
 
 .banner {
   background-image: url(../assets/img/backgroundHomeD.jpg);
