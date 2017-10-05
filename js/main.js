@@ -7,6 +7,11 @@ $(".switch").click(function() {
   $("#header-content").toggleClass("active");
 });
 
+/*perfil select */
+
+$(".show").click(function() {
+  $(".select-nav").addClass("on");
+});
 
 
 //tabs de envios
@@ -48,7 +53,7 @@ $(document).ready(function () {
 
             success: function (rs) {
             	console.log(rs);
-            	
+
                 window.location.replace("activo.html");
             }
         })

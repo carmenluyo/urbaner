@@ -214,6 +214,10 @@ header {
   /* (4 / 12) x 100 */
   width: 33.33%; }
 
+.h-login {
+  height: 90px;
+  line-height: 90px; }
+
 .btn-login, .login form .btnLogin, .login form .loginFacebook {
   color: #fff;
   padding: 11px 0px;
@@ -277,15 +281,20 @@ header {
     .activo .ctn-activo button a {
       color: #fff; }
 
-.black {
-  height: 90px;
-  line-height: 90px; }
-  .black .right ul li:last-child a {
-    border: none;
-    border-radius: 0px; }
-  .black .right ul .perfil img {
-    border-radius: 50%;
-    height: 48px;
-    width: 50px; }
-  .black .left ul li {
-    margin: 0 23px; }
+.select-nav {
+  display: none; }
+
+.select-nav.on {
+  display: block; }
+
+.black .right ul li:last-child a {
+  border: none;
+  border-radius: 0px; }
+
+.black .right ul .perfil img {
+  border-radius: 50%;
+  height: 48px;
+  width: 50px; }
+
+.black .left ul li {
+  margin: 0 23px; }
