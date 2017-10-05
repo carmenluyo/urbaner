@@ -6,145 +6,6 @@ DESCRIPCIÓN: HOJA DE ESTILOS PARA EL HOME PAGE
 @import 'normalize.css';
 @import 'style.scss';
 
-header {
-	padding: 20px 0;
-	.logo {
-		justify-content: flex-start;
-		margin: 0px;
-		position: absolute;
-		.logo-i {
-			img {
-				height: 50px;
-			}
-			h1 {
-				display: none;
-			}
-		}
-	}
-	nav {
-		
-		ul {
-			display:flex;
-			flex-direction: row;
-			li {
-				display: flex;
-			   flex-direction: row;
-				a {
-					color: #fff;
-					font-size: 16px;
-				}
-			}
-
-			.right {
-			   	justify-content: flex-end;
-			   	margin-right: 0px;
-			   	ul {
-			   		li {
-			   			margin: 0 23px;
-			   			&:last-child {
-			   				a {
-								border: 2px solid #fff;
-								border-radius: 20px;
-								color: #fff;
-								padding: 10px 35px;
-			   				}
-			   			}
-
-			   		}
-			   	}
-			}
-		}
-	}
-	@media only screen and (max-width: 768px){
-		.logo{
-			max-width: 174px;
-			display: block;
-			position: relative;
-			margin: 0 auto;
-		}
-		nav{
-			-webkit-transition: all 0.5s ease-out;
-			-o-transition: all 0.5s ease-out;
-			transition: all 0.5s ease-out;
-			ul{
-				display: block!important;
-				li{
-					width: 100%;
-					text-align: center;
-					margin-left: 0!important;
-					a{
-						color: #fff;
-						display: block;
-						font-size: 22px;
-						margin: 15px 0;
-						width: 100%;
-					}
-				}
-			}
-			&.menu.opacity{
-				display: none;
-
-			}
-		}
-		#header-content{
-			-webkit-transition: all 0.5s ease-out;
-			-o-transition: all 0.5s ease-out;
-			transition: all 0.5s ease-out;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			padding-top: 20px;
-			&.active{
-				background-color: rgba(0, 0, 0, 0.85);
-				z-index: 1;
-			}
-		}
-	}
-}
-
-.switch {
-	width: 30px;
-    height: 23px;
-    position: absolute;
-    left: 10%;
-    top: 9%;
-    margin: -15px 0px 0px -15px;
-    cursor: pointer;
-    z-index: 10;
- 	&.on:after {
-  	transform: rotate(-45deg) translate(7px, -8px);
-	}
-	&.on:before {
-	  transform: rotate(45deg) translate(5px, 5px);
-	}
-	 @media only screen and (min-width: 1024px) {
-	 	display: none;
-	 }
-	.on {
-		display: block;
-	} 
-
-}
-.switch .menu-toggle {
-  	width: 100%;
-  	height: 5px;
-  	background: #fff;
-  	margin: 4px auto;
-  	@include transition (all 0.3s);
-  	backface-visibility: hidden;
-}
-.switch.on .menu-toggle {
-  	opacity: 0;
-}
-.switch:before, .switch:after {
-	content: "";
-	display: block;
-	height: 5px;
-	background: #fff;
-	@include transition (all 0.3s);
-	backface-visibility: hidden;
-}
 
 .banner {
 	background-image: url(../assets/img/backgroundHomeD.jpg);
@@ -493,12 +354,11 @@ header {
 	}
 }
 
-//
-//
 
 footer {
 	color: #fff;
 	padding: 50px 0 10px;
+	background: #262f36;
 	@media only screen and (max-width: 768px){
 		.row {
 			margin: 0px;

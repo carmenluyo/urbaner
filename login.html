@@ -10,40 +10,62 @@
 	</head>
 	<body>
 		<header class="black">
-				<div class="container">
-					<nav>
+			<div class="container">
+				<div id="header-content">
+					<div class="logo">
+						<a href="#" class="logo-i">
+							<img  src="assets/img/logoUrbanerWhiteH.png" alt="">
+							<h1>Urbaner</h1>
+						</a>
+					</div>
+					<nav class="menu opacity">
 						<ul>
-							<li class="left">
-								<a href="" class="logo">
-									<img  src="assets/img/logoUrbanerWhiteH.png" alt="">
-									<h1>Urbaner</h1>
-								</a>
+							<li class="right">
+								<ul>
+									<li>
+										<a href="">Nosotros</a>
+									</li>
+									<li>
+										<a href="">Courier</a>
+									</li>
+									<li>
+										<a href="">Entrar</a>
+									</li>
+									<li>
+										<a href="">Registrarse</a>
+									</li>
+								</ul>
 							</li>
-							
 						</ul>
-	          		</nav>
+					</nav>
 				</div>
-  			</header>
-  			<section class="login">
-		  		<div class="container">
-			        <form id="myform" class="loginCliente" novalidate="novalidate">
-			          <h3>INICIAR SESIÓN</h3>
-			          <section>
-			            <input placeholder="Email" type="email" id="username" name="username" aria-required="true" class="valid" >
-			          </section>
-			          <section>
-			            <input placeholder="Contraseña" type="password" id="password" name="password" aria-required="true" class="valid">
-			          </section>
-			          <button id="#btnSubmit" type="submit" class="btnLogin"> INICIAR SESIÓN</button>
-			          <button id="fb"  class="loginFacebook">CONTINUAR CON FACEBOOK</button>
-			          <div class="olvidasteContrasena"><a href="recuperaCuenta/">¿Olvidó su Contraseña?</a></div>
-			          <div class="registroCliente"> 
-			            <p>¿No tienes cuenta? <a href="registroCliente/">Regístrate</a></p>
-			          </div>
-			        </form>
 
-		      </div>
-  			</section>
+			</div>
+			<!-- mobile -->
+			<div class='switch'>
+				<div class='menu-toggle'></div>
+			</div>
+  		</header>
+		<section class="login">
+  		<div class="container">
+	        <form id="myform" class="loginCliente" novalidate="novalidate">
+	          <h3>INICIAR SESIÓN</h3>
+	          <section>
+	            <input placeholder="Email" type="email" id="username" name="username" aria-required="true" class="valid" >
+	          </section>
+	          <section>
+	            <input placeholder="Contraseña" type="password" id="password" name="password" aria-required="true" class="valid">
+	          </section>
+	          <button id="#btnSubmit" type="submit" class="btnLogin"> INICIAR SESIÓN</button>
+	          <button id="fb"  class="loginFacebook">CONTINUAR CON FACEBOOK</button>
+	          <div class="olvidasteContrasena"><a href="recuperaCuenta/">¿Olvidó su Contraseña?</a></div>
+	          <div class="registroCliente"> 
+	            <p>¿No tienes cuenta? <a href="registroCliente/">Regístrate</a></p>
+	          </div>
+	        </form>
+
+      </div>
+		</section>
 
 	  	<script src="js/jquery-3.1.0.min.js"></script>
 	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

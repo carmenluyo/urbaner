@@ -6,6 +6,15 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.green {
+  color: #40df6d; }
+
+.blue {
+  color: #6caddf; }
+
+.black {
+  background: #303e47; }
+
 /* Fonts */
 @font-face {
   font-family: 'ProximaNova';
@@ -43,14 +52,143 @@ button,
     .subtitle {
       font-size: 45px; } }
 
-.green {
-  color: #40df6d; }
+header {
+  padding: 20px 0; }
+  header .logo {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 0px;
+    position: absolute; }
+    header .logo .logo-i img {
+      height: 50px; }
+    header .logo .logo-i h1 {
+      display: none; }
+  header nav ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    header nav ul li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      header nav ul li a {
+        color: #fff;
+        font-size: 16px; }
+    header nav ul .right {
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      margin-right: 0px; }
+      header nav ul .right ul li {
+        margin: 0 23px; }
+        header nav ul .right ul li:last-child a {
+          border: 2px solid #fff;
+          border-radius: 20px;
+          color: #fff;
+          padding: 10px 35px; }
+  @media only screen and (max-width: 768px) {
+    header .logo {
+      max-width: 174px;
+      display: block;
+      position: relative;
+      margin: 0 auto; }
+    header nav {
+      -webkit-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; }
+      header nav ul {
+        display: block !important; }
+        header nav ul li {
+          width: 100%;
+          text-align: center;
+          margin-left: 0 !important; }
+          header nav ul li a {
+            color: #fff;
+            display: block;
+            font-size: 22px;
+            margin: 15px 0;
+            width: 100%; }
+      header nav.menu.opacity {
+        display: none; }
+    header #header-content {
+      -webkit-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      padding-top: 20px; }
+      header #header-content.active {
+        background-color: rgba(0, 0, 0, 0.85);
+        z-index: 1; } }
 
-.blue {
-  color: #6caddf; }
+.switch {
+  width: 30px;
+  height: 23px;
+  position: absolute;
+  left: 10%;
+  top: 9%;
+  margin: -15px 0px 0px -15px;
+  cursor: pointer;
+  z-index: 10; }
+  .switch.on:after {
+    -webkit-transform: rotate(-45deg) translate(7px, -8px);
+    -ms-transform: rotate(-45deg) translate(7px, -8px);
+    transform: rotate(-45deg) translate(7px, -8px); }
+  .switch.on:before {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+    -ms-transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(5px, 5px); }
+  @media only screen and (min-width: 1024px) {
+    .switch {
+      display: none; } }
+  .switch .on {
+    display: block; }
 
-footer {
-  background: #262f36; }
+.switch .menu-toggle {
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.switch.on .menu-toggle {
+  opacity: 0; }
+
+.switch:before, .switch:after {
+  content: "";
+  display: block;
+  height: 5px;
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 .row:before, .row:after {
   content: " ";
@@ -75,9 +213,6 @@ footer {
 .col-4 {
   /* (4 / 12) x 100 */
   width: 33.33%; }
-
-.black {
-  background: #303e47; }
 
 .btn-login, .login form .btnLogin, .login form .loginFacebook {
   color: #fff;
