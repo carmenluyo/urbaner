@@ -303,8 +303,12 @@ header {
 	text-align: center;
 	padding: 20px 0;
 	p {
-		font-size: 1.8em;
+		
 		color: #606060;
+	    font-size: 1.5em;
+		margin-top: 20px;
+		padding: 0 25px;
+		line-height: 30px;
 	}
 	h2 {
 		margin: 20px 0 5px 0;
@@ -313,6 +317,14 @@ header {
 		button {
 			font-size: 1.3em;
 			font-weight: bold;
+		}
+	}
+	@media only screen and (min-width: 1024px) {
+		p {
+			font-size: 1.8em;
+			margin-top:0px;
+			padding: 0;
+			line-height: normal;
 		}
 	}
 }
