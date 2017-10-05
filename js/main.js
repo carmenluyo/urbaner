@@ -4,7 +4,7 @@
 $(".switch").click(function() {
   $(".switch").toggleClass("on");
   $(".menu").toggleClass("opacity");
-  $("#menu-movil").toggleClass("active");
+  $("#header-content").toggleClass("active");
 });
 
 
