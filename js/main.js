@@ -4,7 +4,7 @@
 $(".switch").click(function() {
   $(".switch").toggleClass("on");
   $(".menu").toggleClass("opacity");
-  $("#header-content").toggleClass("active");
+  $("#header-content").toggleClass("active-menu");
 });
 
 /*perfil select */

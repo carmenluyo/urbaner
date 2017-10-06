@@ -134,9 +134,10 @@ header {
       height: 100%;
       top: 0;
       padding-top: 20px; }
-      header #header-content.active {
+      header #header-content.active-menu {
         background-color: rgba(0, 0, 0, 0.85);
-        z-index: 1; } }
+        z-index: 1;
+        right: 0px; } }
 
 .switch {
   width: 30px;
