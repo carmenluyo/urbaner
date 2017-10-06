@@ -65,7 +65,7 @@ $(document).ready(function () {
     $('.name-login').html(dt.client.last_name);
     $('#closelocal').click(function(){
         localStorage.removeItem('info');
-        window.location.replace("http://localhost:63342/testlogin/workspace/index.html");
+        window.location.replace("index.html");
     })
 
 });
